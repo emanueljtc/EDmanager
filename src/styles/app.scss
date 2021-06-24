@@ -1,14 +1,3 @@
-//----- ADVERTENCIA -----//
-/*
-* Código SCSS elaborado con fines de apoyar el ejercicio en React
-* Utilizar bajo su propio riesgo
-* Coman frutas y verduras
-*
-* Su amigo: Juan Disain
-*/
-//----- FINAL DE LA ADVERTENCIA -----//
-
-//----- Layout - base -----//
 * {
     padding: 0;
     margin: 0;
@@ -48,12 +37,12 @@
     border-radius: 8px; 
   }
   
-  .contenedor-jugadores {
+  .content-players {
     overflow: auto;
     padding-bottom: 2rem;
   }
   
-  section>div:not(.cancha):not(.contenedor-jugadores) {
+  section>div:not(.field):not(.content-players) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
@@ -81,9 +70,9 @@
     outline: none;
   }
   
-  //----- Jugadores -----//
+  //----- playeres -----//
   
-  .jugador {
+  .player {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,9 +118,9 @@
   
   }
   
-  //----- Titular -----//
-  .titular,
-  .suplente {
+  //----- headline -----//
+  .headline,
+  .alternate {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,13 +171,13 @@
   
   }
   
-  //----- Cancha de futbol -----//
-  .cancha {
+  //----- field de futbol -----//
+  .field {
     margin: 0 auto;
     width: 75%;
     position: relative;
   
-    .titular {
+    .headline {
       position: absolute;
   
       img {
@@ -205,62 +194,62 @@
   
     }
   
-    //----- Posiciones de los jugadores -----//
+    //----- Posiciones de los playeres -----//
   
-    .titular:first-child {
+    .headline:first-child {
       left: 5%;
       top: 50%;
       transform: translateY(-25%);
     }
   
-    .titular:nth-child(2) {
+    .headline:nth-child(2) {
       left: 30%;
       top: 10%;
     }
   
-    .titular:nth-child(3) {
+    .headline:nth-child(3) {
       left: 25%;
       top: 30%;
     }
   
-    .titular:nth-child(4) {
+    .headline:nth-child(4) {
       left: 25%;
       top: 50%;
     }
   
-    .titular:nth-child(5) {
+    .headline:nth-child(5) {
       left: 30%;
       top: 75%;
     }
   
-    .titular:nth-child(6) {
+    .headline:nth-child(6) {
       left: 50%;
       top: 30%;
       transform: translateX(-50%);
     }
   
-    .titular:nth-child(7) {
+    .headline:nth-child(7) {
       left: 50%;
       top: 55%;
       transform: translateX(-50%);
     }
   
-    .titular:nth-child(8) {
+    .headline:nth-child(8) {
       left: 60%;
       top: 15%;
     }
   
-    .titular:nth-child(9) {
+    .headline:nth-child(9) {
       left: 60%;
       top: 70%;
     }
   
-    .titular:nth-child(10) {
+    .headline:nth-child(10) {
       left: 70%;
       top: 50%;
     }
   
-    .titular:nth-child(11) {
+    .headline:nth-child(11) {
       left: 80%;
       top: 30%;
     }
